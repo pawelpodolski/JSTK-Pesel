@@ -49,7 +49,6 @@ public class StarterkitPeselValidator implements PeselValidator {
 
 	@Override
 	public boolean containsOnlyNumbers(String pesel) {
-		pesel.matches("[]");
 		return ONLY_NUMBERS_PATTERN.matcher(pesel).matches();
 	}
 	
